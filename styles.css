@@ -1,0 +1,74 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FCE09B;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #186F65;
+    color: white;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #B5CB99;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    animation: fade 2s ease infinite;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.presentation {
+    padding: 50px;
+    font-size: 26px;
+    line-height: 1.4;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
